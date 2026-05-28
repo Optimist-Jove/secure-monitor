@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ELITEBOOK\\Desktop\\Projects\\PROF PROJECTS\\MS Visual Basic\\secure_monitor_daemon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83A03CD9-E915-4A73-AFDD-03FCD6D782EF}|secure_monitor_daemon\\secure_monitor_daemon.pyproj|C:\\Users\\ELITEBOOK\\Desktop\\Projects\\PROF PROJECTS\\MS Visual Basic\\secure_monitor_daemon\\secure_monitor_daemon\\secure_monitor_daemon.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{83A03CD9-E915-4A73-AFDD-03FCD6D782EF}|secure_monitor_daemon\\secure_monitor_daemon.pyproj|solutionrelative:secure_monitor_daemon\\secure_monitor_daemon.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "secure_monitor_daemon.py",
+              "DocumentMoniker": "C:\\Users\\ELITEBOOK\\Desktop\\Projects\\PROF PROJECTS\\MS Visual Basic\\secure_monitor_daemon\\secure_monitor_daemon\\secure_monitor_daemon.py",
+              "RelativeDocumentMoniker": "secure_monitor_daemon\\secure_monitor_daemon.py",
+              "ToolTip": "C:\\Users\\ELITEBOOK\\Desktop\\Projects\\PROF PROJECTS\\MS Visual Basic\\secure_monitor_daemon\\secure_monitor_daemon\\secure_monitor_daemon.py*",
+              "RelativeToolTip": "secure_monitor_daemon\\secure_monitor_daemon.py*",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-05-16T11:14:01.609Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

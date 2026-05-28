@@ -1,0 +1,44 @@
+SECURE MONITOR - TERMS OF USE AND DISCLAIMER
+
+PLEASE READ CAREFULLY BEFORE INSTALLING OR USING THIS SOFTWARE.
+
+By selecting "I accept" and continuing installation, you acknowledge that you
+have read, understood, and agree to the terms below. If you do not agree,
+select "I do not accept" to cancel installation.
+
+1. USE AT YOUR OWN RISK
+   You install and use Secure Monitor entirely at your own risk. The software
+   monitors security-related events and may capture images using your device's
+   camera. You are solely responsible for how you use this application.
+
+2. NO WARRANTY
+   The software is provided "AS IS" without warranty of any kind, express or
+   implied, including but not limited to merchantability, fitness for a
+   particular purpose, or non-infringement.
+
+3. LIMITATION OF LIABILITY
+   To the maximum extent permitted by applicable law, the developer(s) and
+   contributors of Secure Monitor shall NOT be liable for any damages
+   whatsoever arising from the use or inability to use this software,
+   including direct, indirect, incidental, special, consequential, or punitive
+   damages, loss of data, privacy breaches, unauthorized access, or any other
+   harm.
+
+4. LEGAL COMPLIANCE
+   You agree to use this software only where you have the legal right to do
+   so. You must comply with all applicable local, national, and international
+   laws regarding privacy, surveillance, employment, and computer use. Covert
+   monitoring of others without consent may be illegal in your jurisdiction.
+
+5. PERMISSIONS AND DATA
+   The application may request camera access, notification permissions,
+   background operation, and Windows Security log access. Captured data is
+   stored on your computer under your user profile. You are responsible for
+   securing that data.
+
+6. ADMINISTRATOR SETUP
+   Windows installation may require one-time elevated setup for security event
+   logging. You are responsible for approving system prompts and understanding
+   their effect.
+
+If you do not agree to these terms, do not install or use this software.

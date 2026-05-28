@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "secure_monitor_daemon", "secure_monitor_daemon\secure_monitor_daemon.pyproj", "{83A03CD9-E915-4A73-AFDD-03FCD6D782EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83A03CD9-E915-4A73-AFDD-03FCD6D782EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A03CD9-E915-4A73-AFDD-03FCD6D782EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53F2CAE4-86ED-4B5E-8C70-269C6E9912A0}
+	EndGlobalSection
+EndGlobal
