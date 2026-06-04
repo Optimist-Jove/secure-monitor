@@ -72,6 +72,27 @@ def is_security_ready() -> bool:
     return False
 
 
+def is_security_setup_in_progress() -> bool:
+    """
+    Check if Windows setup was started but not completed.
+    This helps detect interrupted setups that cause persistent 'MISSING' status.
+    """
+    if platform.system() != "Windows":
+        return False
+    cfg = load_config()
+    # If elevated mode is enabled but setup not marked complete, setup is in progress
+    return bool(cfg.get("run_worker_elevated")) and not is_windows_setup_complete()
+
+
+def recovery_mark_setup_complete() -> None:
+    """
+    Force-mark setup as complete after user has run the admin fix script.
+    This is used for recovery when setup gets stuck in 'MISSING' state.
+    """
+    mark_windows_setup_complete()
+    log_message("Windows setup marked complete (recovery mode)")
+
+
 def run_admin_setup_script() -> Path:
     ensure_fix_script_available()
     return launch_admin_fix_script()
