@@ -125,13 +125,14 @@ def _check_storage() -> bool:
 
 
 def _windows_security_item() -> PermissionItem:
-    from smd.setup_windows import is_security_ready, is_windows_setup_complete
+    from smd.setup_windows import is_security_ready, is_windows_setup_complete, is_security_setup_in_progress
     from smd.windows_security import diagnose_security_log, format_security_status
     from smd.config import load_config
 
     status = diagnose_security_log()
     cfg = load_config()
     granted = is_security_ready()
+    setup_in_progress = is_security_setup_in_progress()
 
     parts = [
         "Failed logon (4625) and lock (4800) require one-time Windows setup (Administrator).",
@@ -140,8 +141,11 @@ def _windows_security_item() -> PermissionItem:
         parts.append("Setup complete — background worker runs with required privileges.")
     elif granted:
         parts.append("Security log is readable and audit policy is configured.")
+    elif setup_in_progress:
+        parts.append("Setup was started but not completed. Run 'Fix Security log (4625/4800)' to recover.")
     else:
         parts.append("Click 'Run full fix (Admin)' or complete first-run setup.")
+    
     if not status.audit_configured:
         parts.append("Audit policy is OFF until Admin setup runs.")
     if not status.can_read_log and not is_windows_setup_complete():
@@ -226,8 +230,11 @@ def fix_windows_security_events(parent: tk.Misc) -> None:
         grant_event_log_readers_hint,
         launch_admin_fix_script,
     )
+    from smd.setup_windows import is_security_setup_in_progress, recovery_mark_setup_complete
 
     status = diagnose_security_log()
+    setup_in_progress = is_security_setup_in_progress()
+    
     msg = (
         format_security_status(status)
         + "\n\n"
@@ -247,6 +254,15 @@ def fix_windows_security_events(parent: tk.Misc) -> None:
             f"Script also saved to:\n{desktop_script}",
             parent=parent,
         )
+        # After user runs the fix, mark setup as complete if they indicate success
+        if setup_in_progress:
+            if messagebox.askyesno(
+                "Setup recovery",
+                "Did the fix script show SUCCESS?\n\n"
+                "Click YES to mark setup complete and enable monitoring.",
+                parent=parent,
+            ):
+                recovery_mark_setup_complete()
     else:
         messagebox.showinfo("How to fix", grant_event_log_readers_hint(), parent=parent)
 
